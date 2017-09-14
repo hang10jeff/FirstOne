@@ -1,11 +1,12 @@
+import tkinter
 from tkinter import *
+##Import of Tkinter module
 
-class MyFrame(Frame):
-  def __init__(self):
-     Frame.__init__(self)
+window = Tk()
+##Creates the window from the imported Tkinter module
+window.geometry("600x400")
+##Creates the size of the window
+window.title("Test :)")
+##Adds a title to the Windows GUI for the window
 
-     self.myCanvas = Canvas(width=300, height=200, bg="blue")
-     self.myCanvas.grid()
-
-frame02 = MyFrame()
-frame02.mainloop()
+window.mainloop()
